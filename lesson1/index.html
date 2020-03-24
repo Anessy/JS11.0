@@ -6,6 +6,62 @@
   <title>Lesson1</title>
 </head>
 <body>
-  
+  <style>
+    body {
+      padding: 3rem;
+      background-color: beige;
+    }
+    h1 {
+        color: rgb(49, 88, 3); 
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    button {
+      padding: 0.7rem 1.5rem;
+      color: beige;
+      background-color: rgb(76, 112, 82);
+      border: 1px solid rgb(1, 70, 12);
+      font-size: 14px;
+      border-radius: 7px;
+      outline: none;
+      display: block;
+      margin: 1rem;
+    }
+    button:active {
+      outline: none;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    }
+
+  </style>
+
+  <section>
+    <h1>Выберите один или несколько вариантов</h1>
+    <label>
+      <input type="checkbox" name="" id="one" onchange="checkbox()"> Вариант 1 <br> 
+    </label>
+    <label>
+      <input type="checkbox" name="" id="two" onchange="checkbox()"> Вариант 2 <br> 
+    </label>
+    <label>
+      <input type="checkbox" name="" id="three" onchange="checkbox()"> Вариант 3 
+    </label>
+    <hr>
+    Результат: <span id="result"></span>
+  </section>
+
+  <section>
+    <h1>Выберите один вариант</h1>
+    <input type="radio" name="r1" id="" value="1"> Вариант 1 <br>
+    <input type="radio" name="r1" id="" value="12"> Вариант 2 <br>
+    <input type="radio" name="r1" id="" value="123"> Вариант 3 <br>
+    <input type="radio" name="r1" id="" value="1234"> Вариант 4 <br>
+    <input type="radio" name="r1" id="" value="12345"> Вариант 5
+    <button id="button">Выбрать</button>
+    <hr>
+    Результат: <span id="result2"></span>
+  </section>
+
+<script src="./script.js"></script>
 </body>
 </html>
